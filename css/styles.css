@@ -1,0 +1,354 @@
+/* hamburger symbol for navbar */
+
+*{
+    background-color: #1d1d1d;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.hamburger {
+    /* width: 100%; */
+    z-index: 3;
+    display: none;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px,6px);
+    transform: rotate(-45deg) translate(-9px,6px);
+
+}
+.change .bar2{opacity: 0;}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* nav bar content */
+
+.sidenavbar{
+    display: flex;
+    flex-direction: column;
+    height : 100%;
+    position:fixed;
+    z-index: 3;
+    top : 0;
+    left: 0;
+    overflow-x: hidden;
+    /* padding-top: 2rem; */
+    background-color: #181818;
+    padding-top: 0px;
+    /* padding-top: 16vh; */
+}
+
+.social{
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 0rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height:20rem;
+    background-color: #181818;
+}
+.social .a{
+    height: 5rem;
+    width: 5rem;
+    padding: 2rem;
+    background-color: #181818;
+}
+.social li, .social li a{
+    background-color: #181818;
+}
+.social img, svg{
+    margin: 0.5rem;
+}
+.logo{
+    padding: 0px;
+}
+.main{
+    padding-top: 8rem;
+    padding-left: 10rem ;
+}
+@media screen and (max-width: 900px) {
+    .main{
+        padding: 2rem;
+    }
+    .hamburger{
+        display: inline-block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 3;
+    }
+    .sidenavbar{
+        display:none;
+        align-items: center;
+        position: relative;
+        /* width: 100%; */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 4;
+        /* transition: display 0.25s ease-in-out; */
+    }
+    .sidenavbar nav a{
+        text-align: center;
+        /* width: 100%; */
+    }
+    .row .col{
+        text-align: left;
+    }
+}
+.sidenavbar nav a{
+    border: 1.5px solid #1d1d1d;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1.25rem;
+    background-color: #181818;
+}
+
+/* main */
+
+
+.hacker{
+    width: 75%;
+    height: 100%;
+}
+.content{
+    display:none;
+}
+
+.about{
+    padding-top: 5rem;
+    position: relative;
+    text-align: justify;
+}
+.aboutheading{
+    position: relative;
+    z-index: 3;
+}
+.hobbies{
+    padding-top: 5rem;
+    text-align: justify;
+}
+.myskills{
+    
+    padding-top: 10rem;  
+    text-align: right;
+}
+.myskillsheading{
+    position: relative;
+    z-index: 3;
+    margin-bottom: 1.5rem;
+    text-align: right;
+}
+.myskillscontent{
+    /* width: 100%; */
+    /* text-align: justify; */
+    text-align: right;
+}
+.progress{
+    margin-top: 0.7rem;
+    height: 10px; 
+    width: 25rem; 
+    display: inline-flex;
+}
+.projects{
+    padding-top: 15rem;
+    text-align: left;
+    background: rgb(29, 29, 29);
+    background: rgb(29, 29, 29,0);
+}
+.projectheading{
+    /* width: fit-content; */
+    position: relative;
+    z-index: 3;
+}
+.projectcontent{
+    /* padding-top: 5rem; */
+}
+.projects_webpage{
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+.contacts{
+    padding-top: 5rem;
+    text-align: justify;
+}
+.contacts .container{
+    float: right;
+}
+
+.bgtext{
+    color:#3d3d3d;
+    font-size: 15vw;
+    position:absolute;
+    font-family: 'Secular One', sans-serif;
+    z-index: 0;
+    opacity: 0.3;
+    width: 100%;
+    display: block;
+    text-align: right;
+    height: fit-content;
+}
+.bgtextleft{
+    color:#3d3d3d;
+    font-size: 15vw;
+    font-family: 'Secular One', sans-serif;
+    position:absolute;
+    z-index: 0;
+    opacity: 0.3;
+    top: -1rem;
+    left: -6.7rem;
+    width: 100%;
+    text-align: left;
+    /* float: right; */
+    height: fit-content;
+}
+#scrollup{
+    display: none;
+    position:fixed;
+    /* float: right; */
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    /* margin-bottom: 1rem; */
+    /* right: 20px; */
+}
+.container{
+    position: relative;
+    z-index: 2;
+    background: rgb(29, 29, 29);
+    background: rgb(29, 29, 29,0);
+}
+.aboutme{
+    padding-top:5rem;
+    padding-left: 5rem;
+}
+.js-slidein{
+    /* opacity:0; */
+    transform: translateY(100px);
+    -webkit-transition:all 300ms ease-in-out;
+    transition:all 300ms ease-in-out;
+}
+/*Add slide in effect*/
+ 
+
+/* Flip card effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  /* change the below */
+  height: 400px;
+  margin: auto;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  /* pointer-events: none; */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  pointer-events: auto;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+  background-color: #008CCC;
+  color:#1d1d1d;
+  text-align: center;
+  height: auto;
+}
+
+.flip-card-back {
+  background-color: #1d1d1d;
+  color: rgb(31, 31, 31);
+  transform: rotateY(180deg);
+  /* change the below */
+  height: 400px;
+}
+
+.flip-card-back ul {
+  padding-left: 1em;
+  padding-right: 1em;
+  list-style-type: none;
+}
+
+.flip-card-back li {
+  border-bottom: 1px solid black;
+}
+
+.flip-card-back li:last-child {
+  border-bottom: none;
+}
+
+.flip-card-back h2 {
+  text-align: center;
+  background-color: rgb(16, 16, 16);;
+  color: white;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.flip-card-back h2 a,
+.flip-card-back h2 a:visited {
+  color: white;
+}
+
+.flip-card-back a {
+  display: block;
+}
+
+.front-title {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+
+.flip-cards {
+  display: flex;
+}
+
+.sbr-intro {
+  margin-bottom: 1em;
+}
