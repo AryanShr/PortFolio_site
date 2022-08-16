@@ -356,3 +356,9 @@ body{
 .sbr-intro {
   margin-bottom: 1em;
 }
+@media screen and (max-width: 900px) {
+    .flip-card{
+        height: 560px;
+    }
+}
+
