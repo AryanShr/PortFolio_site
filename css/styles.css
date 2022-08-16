@@ -9,6 +9,9 @@ html{
     scroll-behavior: smooth;
     background-color: #1d1d1d;
 }
+body{
+    background-color: #1d1d1d !important;
+}
 .hamburger {
     /* width: 100%; */
     z-index: 3;
