@@ -7,6 +7,10 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #1d1d1d;
+}
+body{
+    background-color: #1d1d1d !important;
 }
 .hamburger {
     /* width: 100%; */
@@ -306,7 +310,7 @@ html{
   color: rgb(31, 31, 31);
   transform: rotateY(180deg);
   /* change the below */
-  height: 400px;
+  /* height: 400px; */
 }
 
 .flip-card-back ul {
@@ -347,8 +351,14 @@ html{
 
 .flip-cards {
   display: flex;
+  position: relative;
 }
 
 .sbr-intro {
   margin-bottom: 1em;
+}
+@media screen and (max-width: 900px) {
+    .flip-card{
+        height: 560px;
+    }
 }
