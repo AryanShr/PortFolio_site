@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-color:#1d1d1d;
+    background-color:#1d1d1d !important;
 }
 .hamburger {
     /* width: 100%; */
