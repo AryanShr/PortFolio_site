@@ -373,4 +373,29 @@ body{
         top: 2rem;
         left: 1rem;
     }
+    .C{
+        padding-right: 5rem;
+    }
+    .Cpp{
+        padding-right: 3.5rem;
+    }
+    .Java{
+        padding-right: 3.5rem;
+    }
+    .JavaScript{
+        padding-right: 1rem;
+    }
+    .Front-End{
+        padding-right: 1rem;
+    }
+    .Python{
+        padding-right: 2.3rem;
+    }
+    .Back-End{
+        padding-right: 1.3rem;
+    }
+    .ML{
+        padding-right: 4rem;
+    }
 }
+
